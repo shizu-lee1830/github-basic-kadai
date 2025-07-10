@@ -1,0 +1,27 @@
+PS C:\Users\shizu\GitHub_Tutorial> mkdir git_challenge
+
+    Directory: C:\Users\shizu\GitHub_Tutorial
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2025/07/10    20:10                git_challenge
+
+PS C:\Users\shizu\GitHub_Tutorial> cd .\git_challenge
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> git init
+Initialized empty Git repository in C:/Users/shizu/GitHub_Tutorial/git_challenge/.git/
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> echo "hello_world!" >> hello_world.txt
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> git add hello_world.txt
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) c0dc026] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> echo "こんにちは、世界!" >> hello_world.txt
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> git add hello_world.txt                    
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> git commit -m "日本語 訳を追記"            
+[main 4eff0d5] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> git log --oneline
+4eff0d5 (HEAD -> main) 日本語訳を追記
+c0dc026 hello_world.txtを追加
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> 
+PS C:\Users\shizu\GitHub_Tutorial\git_challenge> 
